@@ -1,0 +1,19 @@
+{
+    "name": "freento/module-disable-carts-endpoint",
+    "description": "Magento 2 module that blocks the PUT /V1/guest-carts/:cartId/order REST API endpoint to prevent card testing (carding) attacks via guest checkout.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "magento/framework": "*",
+        "magento/module-quote": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Freento\\DisableCartsEndpoint\\": ""
+        }
+    }
+}
